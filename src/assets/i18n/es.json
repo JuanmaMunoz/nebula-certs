@@ -1,5 +1,8 @@
 {
   "myCertificates": "Mis Certificados",
+  "createCertificate": "Create certificate",
+  "certificateList": "Certificate list",
+  "certificateDetail": "Certificate detail",
   "table":{
     "name": "Nombre",
     "id": "Id",

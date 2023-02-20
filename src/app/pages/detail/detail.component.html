@@ -1,0 +1,25 @@
+<div class="detail">
+  <h1 class="text-primary">{{ 'certificateDetail' | translate }}</h1>
+  <h3 class="text-primary">
+    Id: <span class="text-secondary">{{ certificateSelected.id }}</span>
+  </h3>
+  <h3 class="text-primary">
+    Name: <span class="text-secondary">{{ certificateSelected.name }}</span>
+  </h3>
+  <h3 class="text-primary">
+    Type: <span class="text-secondary">{{ certificateSelected.type }}</span>
+  </h3>
+  <h3 class="text-primary">
+    Company: <span class="text-secondary">{{ certificateSelected.company }}</span>
+  </h3>
+  <h3 class="text-primary">
+    Create: <span class="text-secondary">{{ certificateSelected.creationDate }}</span>
+  </h3>
+  <h3 class="text-primary">
+    Exp: <span class="text-secondary">{{ certificateSelected.expDate }}</span>
+  </h3>
+</div>
+<hr />
+<a class="text-primary ms-2" [routerLink]="['/cert/list']">Go list</a>
+<a class="text-primary ms-2" [routerLink]="['/cert']">Go Home</a>
+<a class="text-primary ms-2" [routerLink]="['/users/info']">Go user info</a>
