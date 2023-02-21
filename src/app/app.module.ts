@@ -10,15 +10,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { DetailComponent } from './pages/detail/detail.component';
+import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, `${assetUrl('i18n/')}`, '.json');
 }
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ListComponent, DetailComponent],
+  declarations: [AppComponent, HomeComponent, ListComponent, DetailComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
